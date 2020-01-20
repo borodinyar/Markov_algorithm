@@ -6,7 +6,6 @@ def read_file(number):
 def parse(substitutions):
     parse_substitutions = []
     for substitution in substitutions:
-        print(substitution.split(' '))
         find_str, arrow, replace_str = substitution.split(' ')
         replace_str = replace_str.strip()
         terminal = ("." in arrow)
